@@ -28,8 +28,6 @@ spec:
                 echo "model /models/granite-7b-lab.Q4_K_M.gguf already present"
               fi
           resources: {}
-      nodeSelector:
-        feature.node.kubernetes.io/cpu-cpuid.MMA: "true"
       containers:
         - name: llama-cpp
           image: quay.io/mgiessing/llama-cpp-server:master-b1698-2-ga206137
